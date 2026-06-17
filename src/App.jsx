@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 function App() {
 
@@ -35,37 +36,45 @@ function App() {
     };
 
     return (
-        <div style={{ padding: "20px" }}>
+        <div className="container">
 
             <h1>Task Tracker</h1>
 
-            <input
-                type="text"
-                value={taskText}
-                onChange={(e) => setTaskText(e.target.value)}
-                placeholder="Enter task"
-            />
+            <div className="input-row">
 
-            <button onClick={addTask}>
-                Додати
-            </button>
+                <input
+                    type="text"
+                    value={taskText}
+                    onChange={(e) => setTaskText(e.target.value)}
+                    placeholder="Enter task..."
+                />
 
-            <ul>
-                {tasks.map((task) => (
-                    <li
+                <button onClick={addTask}>
+                    +
+                </button>
+
+            </div>
+
+            <div className="task-list">
+
+                {tasks.map(task => (
+
+                    <div
                         key={task.id}
                         onClick={() => toggleTask(task.id)}
-                        style={{
-                            cursor: "pointer",
-                            textDecoration: task.completed
-                                ? "line-through"
-                                : "none",
-                        }}
+                        className={`task ${
+                            task.completed
+                                ? "completed"
+                                : ""
+                        }`}
                     >
+                        {task.completed ? "✓ " : "○ "}
                         {task.text}
-                    </li>
+                    </div>
+
                 ))}
-            </ul>
+
+            </div>
 
         </div>
     );
