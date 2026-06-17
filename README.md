@@ -47,6 +47,9 @@ npm install
 npm run dev
 ```
 
+## Скріншот
+![Task Tracker](src/assets/img.png)
+
 ## Автор
 
 Артем Милостивий
