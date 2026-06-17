@@ -21,6 +21,19 @@ function App() {
         setTaskText("");
     };
 
+    const toggleTask = (id) => {
+
+        const updatedTasks = tasks.map((task) =>
+
+            task.id === id
+                ? { ...task, completed: !task.completed }
+                : task
+
+        );
+
+        setTasks(updatedTasks);
+    };
+
     return (
         <div style={{ padding: "20px" }}>
 
@@ -39,7 +52,16 @@ function App() {
 
             <ul>
                 {tasks.map((task) => (
-                    <li key={task.id}>
+                    <li
+                        key={task.id}
+                        onClick={() => toggleTask(task.id)}
+                        style={{
+                            cursor: "pointer",
+                            textDecoration: task.completed
+                                ? "line-through"
+                                : "none",
+                        }}
+                    >
                         {task.text}
                     </li>
                 ))}
