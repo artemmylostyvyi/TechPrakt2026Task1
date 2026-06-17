@@ -1,16 +1,52 @@
-# React + Vite
+# TechPrakt2026Task1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Zhytomyr Polytechnic](https://media.ztu.edu.ua/wp-content/uploads/2020/02/Group-6-1-1536x465.png)
 
-Currently, two official plugins are available:
+## Опис
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Практична робота №1 з дисципліни «Технологічна практика».
 
-## React Compiler
+Метою роботи є ознайомлення з основами роботи системи контролю версій Git та сервісу GitHub, створення локального й віддаленого репозиторіїв, виконання комітів та розробка простого вебзастосунку на базі Vite.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Виконані завдання
 
-## Expanding the ESLint configuration
+* створено локальний Git-репозиторій;
+* створено віддалений репозиторій на GitHub;
+* налаштовано взаємодію з GitHub;
+* перевірено роботу `.gitignore`;
+* реалізовано трекер завдань;
+* реалізовано позначення завдань як виконаних;
+* виконано коміти у стилі Conventional Commits;
+* завантажено проєкт на GitHub.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Функціонал застосунку
+
+* додавання нових завдань;
+* відображення списку завдань;
+* позначення завдань як виконаних;
+* простий користувацький інтерфейс.
+
+## Використані команди Git
+
+```bash
+git init
+git status
+git add
+git commit
+git remote add
+git push
+git pull
+git branch
+git check-ignore
+```
+
+## Запуск проєкту
+
+```bash
+npm install
+npm run dev
+```
+
+## Автор
+
+Артем Милостивий
